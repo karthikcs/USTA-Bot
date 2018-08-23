@@ -1,0 +1,87 @@
+slots:
+  GPE:
+    type: text
+  skill:
+    type: text
+  requested_slot:
+    type: text
+  hotlist: 
+    type: text
+
+
+entities:
+- GPE
+- skill
+- hotlist
+
+intents:
+ - greet
+ - affirm
+ - deny
+ - search_candidate
+ - search_candidate1
+ - inform
+ - create_hotlist
+ - help
+ 
+templates:
+  utter_greet:
+    - "hey there!"
+    - "Hello"
+  utter_goodbye:
+    - "goodbye :("
+    - "Bye-bye"
+  utter_default:
+    - "default message"
+  utter_ack_dosearch: 
+    - "ok let me see what I can find for candidates in {GPE} with skills {skill}"
+  utter_ask_howcanhelp:
+    - "how can I help you?"
+  utter_ask_location:
+    - "where?"
+    - "Which place"
+  utter_ask_skill:
+    - "What skills?"
+  utter_ask_GPE:
+    - "Which place?"
+    - "Where"
+  utter_hotlist_created:
+    - "Hot list {hotlist} is created"
+  utter_ask_name:
+    - "Please provide the name of hotlist"
+  utter_restart:
+    - "Thank you"
+  utter_ask_numpeople:
+    - "for how many people?"
+  utter_help:
+    - "You can search, create hotlist"
+  utter_ask_price: 
+    - text: "in which price range?"
+      buttons:
+      - title: "cheap"
+        payload: "cheap"
+      - title: "expensive"
+        payload: "expensive"
+  utter_on_it: 
+    - "I'm on it"
+
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ack_dosearch
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_GPE
+- utter_ask_skill
+- utter_hotlist_created
+- utter_ask_name
+- utter_ask_numpeople
+- utter_ask_price
+- utter_on_it
+- utter_restart
+- utter_help
+- actions.ActionClearSlots
+- actions.ActionCheckSlots
+- actions.ActionCreateHL

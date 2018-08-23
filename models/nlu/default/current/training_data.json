@@ -1,0 +1,418 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hello there"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evevning"
+      },
+      {
+        "intent": "greet",
+        "text": "goodmorning"
+      },
+      {
+        "intent": "greet",
+        "text": "goodevening"
+      },
+      {
+        "intent": "greet",
+        "text": "hey dude"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "cu"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "intent": "affirm",
+        "text": "OK"
+      },
+      {
+        "intent": "affirm",
+        "text": "Yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "perfect"
+      },
+      {
+        "intent": "affirm",
+        "text": "that's right"
+      },
+      {
+        "intent": "deny",
+        "text": "No"
+      },
+      {
+        "intent": "deny",
+        "text": "Wrong"
+      },
+      {
+        "intent": "deny",
+        "text": "not really"
+      },
+      {
+        "intent": "search_candidate",
+        "text": "search candidate"
+      },
+      {
+        "intent": "search_candidate",
+        "text": "candidate search"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 19,
+            "end": 28,
+            "value": " New York",
+            "entity": "location"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "value": "Java ",
+            "entity": "skill"
+          }
+        ],
+        "text": "search candidate in New York with Java skill"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": ".Net",
+            "entity": "skill"
+          },
+          {
+            "start": 31,
+            "end": 42,
+            "value": "sharepoint ",
+            "entity": "skill"
+          },
+          {
+            "start": 53,
+            "end": 64,
+            "value": "California ",
+            "entity": "location"
+          }
+        ],
+        "text": "search candidate with .Net and sharepoint Skill near California "
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 25,
+            "end": 38,
+            "value": "Philadelphia ",
+            "entity": "location"
+          }
+        ],
+        "text": "search candidates around Philadelphia "
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 26,
+            "end": 31,
+            "value": "Ajax ",
+            "entity": "skill"
+          }
+        ],
+        "text": "search candidates who has Ajax knowledge"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 26,
+            "end": 36,
+            "value": "AngularJS ",
+            "entity": "skill"
+          },
+          {
+            "start": 50,
+            "end": 60,
+            "value": "Washington",
+            "entity": "location"
+          }
+        ],
+        "text": "search candidates who has AngularJS experience in Washington"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Java",
+            "entity": "skill"
+          }
+        ],
+        "text": "Java"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Cansas",
+            "entity": "location"
+          }
+        ],
+        "text": "Cansas"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "NodeJS",
+            "entity": "skill"
+          }
+        ],
+        "text": "NodeJS"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Texas",
+            "entity": "location"
+          }
+        ],
+        "text": "Texas"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "Boston",
+            "entity": "location"
+          }
+        ],
+        "text": "find candidates in Boston"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "Nevada",
+            "entity": "location"
+          }
+        ],
+        "text": "search candidates around Nevada"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "Ajax ",
+            "entity": "skill"
+          }
+        ],
+        "text": "search candidates with Ajax skill"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "ABAP ",
+            "entity": "skill"
+          }
+        ],
+        "text": "search candidate with ABAP knowledge"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "Java ",
+            "entity": "skill"
+          }
+        ],
+        "text": "find candidates with Java knowledge"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": ".Net",
+            "entity": "skill"
+          }
+        ],
+        "text": "search candidates with .Net skills"
+      },
+      {
+        "intent": "search_candidate",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "PHP ",
+            "entity": "skill"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "value": "France",
+            "entity": "location"
+          }
+        ],
+        "text": "look for people with PHP skills in France"
+      },
+      {
+        "intent": "create_hotlist",
+        "text": "create hotlist"
+      },
+      {
+        "intent": "create_hotlist",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "list1",
+            "entity": "hotlist"
+          }
+        ],
+        "text": "create hotlist list1"
+      },
+      {
+        "intent": "create_hotlist",
+        "text": "please add new hotlist"
+      },
+      {
+        "intent": "create_hotlist",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "list2",
+            "entity": "hotlist"
+          }
+        ],
+        "text": "please add new hotlist list2"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "list1",
+            "entity": "hotlist"
+          }
+        ],
+        "text": "list1"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "list2",
+            "entity": "hotlist"
+          }
+        ],
+        "text": "hotlist name is list2"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "list3",
+            "entity": "hotlist"
+          }
+        ],
+        "text": "list3"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "abhinav",
+            "entity": "hotlist"
+          }
+        ],
+        "text": "abhinav"
+      },
+      {
+        "intent": "help",
+        "text": "help"
+      },
+      {
+        "intent": "help",
+        "text": "Can you please help me"
+      },
+      {
+        "intent": "help",
+        "text": "How to work with you?"
+      },
+      {
+        "intent": "help",
+        "text": "help me"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}
