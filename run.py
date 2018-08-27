@@ -11,4 +11,4 @@ input_channel = SlackInput('xoxp-420470916805-419761592033-419613831712-da50b705
 'xoxb-420470916805-419613833632-VIj1Nptcr2x5FqpKrlNlmotc',
 'dhwYIumHCA9QLesY6FQ1zsz8', True)
 
-agent.handle_channel(HttpInputChannel(5004, '/', input_channel))
+agent.handle_channel(HttpInputChannel(5002, '/', input_channel))
