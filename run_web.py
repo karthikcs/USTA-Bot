@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 import argparse
 
 from bot_server_channel import BotServerInputChannel
+from rasa_core.channels.console import ConsoleInputChannel
 
 from rasa_core.agent import Agent
 from rasa_core import utils

@@ -7,6 +7,8 @@
 * inform{"GPE": "New York"}
   - action_check_slots
 * inform{"skill": ".Net"}
+  - utter_sure
+* sure
   - action_check_slots
   - action_restart
 
@@ -19,6 +21,8 @@
 * inform{"skill": ".Net"}
   - action_check_slots
 * inform{"GPE": "New York"}
+  - utter_sure
+* sure  
   - action_check_slots  
   - action_restart
 
@@ -27,6 +31,8 @@
   - utter_greet
   - utter_ask_howcanhelp
 * search_candidate{"GPE": "New York", "skill": ".Net"}
+  - utter_sure
+* sure  
   - action_check_slots
   - action_restart
 
@@ -37,6 +43,8 @@
 * search_candidate{"GPE": "New York"}
   - action_check_slots
 * inform{"skill": ".Net"}
+  - utter_sure
+* sure  
   - action_check_slots  
   - action_restart
 
@@ -47,6 +55,8 @@
 * search_candidate{"skill": ".Net"}
   - action_check_slots
 * inform{"GPE": "India"}
+  - utter_sure
+* sure  
   - action_check_slots  
   - action_restart
 

@@ -17,6 +17,7 @@ action_names:
 - utter_on_it
 - utter_restart
 - utter_help
+- utter_sure
 - action_clear_slots
 - action_check_slots
 - action_hotlist_create
@@ -36,6 +37,7 @@ actions:
 - utter_on_it
 - utter_restart
 - utter_help
+- utter_sure
 - actions.ActionClearSlots
 - actions.ActionCheckSlots
 - actions.ActionCreateHL
@@ -61,6 +63,10 @@ intents:
 - create_hotlist:
     use_entities: true
 - help:
+    use_entities: true
+- sure:
+    use_entities: true
+- notsure:
     use_entities: true
 slots:
   GPE:
@@ -115,3 +121,10 @@ templates:
   - text: I'm on it
   utter_restart:
   - text: Thank you
+  utter_sure:
+  - buttons:
+    - payload: sure
+      title: 'Yes'
+    - payload: notsure
+      title: 'No'
+    text: Are you sure?

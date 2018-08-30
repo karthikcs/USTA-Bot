@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "skill",
         "hotlist",
+        "skill",
         "GPE"
       ]
     },

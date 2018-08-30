@@ -6,8 +6,10 @@
     "intent_greet",
     "intent_help",
     "intent_inform",
+    "intent_notsure",
     "intent_search_candidate",
     "intent_search_candidate1",
+    "intent_sure",
     "entity_GPE",
     "entity_skill",
     "entity_hotlist",
@@ -33,6 +35,7 @@
     "prev_utter_on_it",
     "prev_utter_restart",
     "prev_utter_help",
+    "prev_utter_sure",
     "prev_action_clear_slots",
     "prev_action_check_slots",
     "prev_action_hotlist_create"

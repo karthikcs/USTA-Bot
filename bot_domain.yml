@@ -23,6 +23,8 @@ intents:
  - inform
  - create_hotlist
  - help
+ - sure
+ - notsure
  
 templates:
   utter_greet:
@@ -55,6 +57,13 @@ templates:
     - "for how many people?"
   utter_help:
     - "You can search, create hotlist"
+  utter_sure:
+    - text: "Are you sure?"
+      buttons:
+      - title: "Yes"
+        payload: "sure"
+      - title: "No"
+        payload: "notsure"
   utter_ask_price: 
     - text: "in which price range?"
       buttons:
@@ -82,6 +91,7 @@ actions:
 - utter_on_it
 - utter_restart
 - utter_help
+- utter_sure
 - actions.ActionClearSlots
 - actions.ActionCheckSlots
 - actions.ActionCreateHL

@@ -102,8 +102,10 @@ class BotServerInputChannel(InputChannel):
     @app.route("/conversations/<cid>/log", methods=["GET"])
     @check_cors
     def show_log(self, request, cid):
+        print("Log called" + cid)
         request.setHeader("Content-Type", "application/json")
         return json.dumps(self.message_store[cid])
+        
 
     @app.route("/conversations/<cid>/say", methods=["GET"])
     @check_cors
@@ -113,6 +115,7 @@ class BotServerInputChannel(InputChannel):
         _display_name = request.args.get(b"display_name", [])
         _uuid = request.args.get(b"uuid", [])
         logger.info(message)
+
 
         if len(_display_name) > 0:
             display_name, = _display_name
